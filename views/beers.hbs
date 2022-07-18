@@ -1,0 +1,21 @@
+<h1>Beers</h1>
+
+<h2>{{name}}</h2>
+
+<ul>
+  {{#each beers as |beer|}}
+    <li>
+      <a href="/beers/{{beer.id}}">
+        {{this.name}}
+      </a>
+    </li>
+  {{else}}
+    <p>No hay cervezas disponibles 😭</p>
+  {{/each}}
+  {{!-- {{#each beers}}
+    <li>{{this.name}}</li>
+  {{/each}}
+  {{#each beers}}
+    <li>{{name}}</li>
+  {{/each}} --}}
+</ul>
